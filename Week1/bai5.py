@@ -1,0 +1,6 @@
+tien_gui = float(input("Số tiền gửi: "))
+thang_gui = int(input("Số tháng gửi: "))
+lai_suat = float(input("Lãi suất: "))
+tien_lai = int((tien_gui*thang_gui)*(lai_suat/100/12))
+print("Tiền lãi: {:,} VND".format(tien_lai))
+print("Tổng số tiền: {:,} VND".format(int(tien_lai+tien_gui)))
